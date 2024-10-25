@@ -1,5 +1,6 @@
 # Flask exercises
 
-this is the repository for learning flask in 3 month
+render with jinja2 
+get a conditional statement, loop in the introduction.py list
 
-Introduction - the first code in flask
+
