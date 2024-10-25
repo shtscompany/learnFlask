@@ -6,6 +6,23 @@
     <title>Flask App</title>
 </head>
 <body>
-    <h1>Welcome, {{ name }}!</h1>
+    
+    <!-- conditional rendreing -->
+    {% if name == "simon" %}
+    <p>Hello, Simon! You're our VIP.</p>
+    {% else %}
+        <p>Welcome, {{ name }}!</p>
+        <!-- iterate in the list  -->
+        <ul>
+            {% for item in items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    
+    
+
+    
 </body>
 </html>
