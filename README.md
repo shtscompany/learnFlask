@@ -64,3 +64,6 @@ After getting comfortable with Jinja2 templating in Flask, there are several key
 ---
 
 This progression will give you a solid understanding of Flask’s capabilities and set you up to build more complex, full-featured web applications. Let me know if there’s a specific topic you’d like more detail on!
+
+
+installed pip, python-dotenv

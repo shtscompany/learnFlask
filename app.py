@@ -1,12 +1,15 @@
 from flask import Flask
 from flask import render_template
 
-# app = Flask(__name__)
+from dotenv import load_dotenv 
+load_dotenv('./.flaskenv')
 
-# Routes in Flask are defined using the @app.route decorator. You can create different routes for different URLs:
+app = Flask(__name__)
+
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return render_template('index.html')
+    
 
 # The @app.route('/') decorator binds the '/' URL (the homepage) to the home() function.
 @app.route('/home')
