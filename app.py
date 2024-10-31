@@ -8,7 +8,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    fName="Simon"
+    lName="Tsiklauri"
+    return render_template('index.html', fName=fName, lName=lName)
     
 
 # The @app.route('/') decorator binds the '/' URL (the homepage) to the home() function.

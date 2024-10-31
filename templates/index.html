@@ -1,6 +1,27 @@
 {%  extends 'base.html' %}
 
 {% block content %}
-    <h1 class="text-center my-2">Hello Tsiklauri </h1>
+    <h1>Hello {{fName}} {{lName}} </h1>
+    <div id="app">
+        <form action="">
+            <div class="form-group row">
+                <div class="col-9">
+                    <label for="">Create new task</label>
+                    <input type="text" class="form-control"></div>
+                <div class="col-auto mt-auto">
+                    <button class="btn btn-success" type="submit">create</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="mt-5">
+            <div class="card">
+                <div class="card-body row justify-content-between px-4">
+                    do nothing
+                    <buton type="submit" class="btn-close"></buton>
+                </div> 
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
